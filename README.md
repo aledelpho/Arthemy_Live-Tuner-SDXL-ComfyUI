@@ -88,10 +88,10 @@ In this alternative solution, I've solved the issue increasing the value of "Sty
 
 The node offers two mathematical approaches to weighting:
 
-1. **Soft Value**: Uses a custom quadratic curve designed for smoother, more organic transitions. It is recommended for most users as it prevents the model from "breaking" too quickly when values are pushed.
-2. **Real Value**: A direct linear multiplier.
+1. **Soft Value**: The values added here are converted in a much lighter change in the model / CLIP so you can play with any value from "-1.0" to "2.0" without much trouble, ideal for chirurgical modifications.
+2. **Real Value**: A direct linear multiplier (the one I've used in the previous examples, I do not suggest to move outside the "0.8" to "1.2" range)
 
-**Important Note on Real Value Mode**: This mode is extremely sensitive. You must be very delicate with your adjustments. For example, moving a slider from **1.0 to 0.9** already represents a very heavy change in the model's behavior. Small increments (e.g., 0.01 or 0.02) are recommended for precise tuning.
+**Important Note on Real Value Mode**: This mode is extremely sensitive. Small increments (e.g., 0.01 or 0.02) are recommended for precise tuning.
 
 ---
 
