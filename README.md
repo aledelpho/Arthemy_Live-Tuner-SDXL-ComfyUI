@@ -9,7 +9,7 @@ Hi everyone!
 
 After years of experimenting with SDXL (including variants like Illustrious and NAI) and deep diving into model merging, I developed these nodes to offer granular control over a single model.
 
-I utilized the block-splitting logic found in tools like "SDXL Block Merge" and reorganized those technical segments into functional groups based on their visible impact on generation. Instead of merging two models, these nodes act on a single model, allowing you to amplify or reduce the intensity of specific areas.
+I utilized the block-splitting logic found in tools like "SDXL Block Merge" and reorganized those technical segments into functional groups based on their visible impact on generation. Instead of merging two models, these nodes act on a single model, allowing you to amplify or reduce the intensity of those areas.
 
 This process is fast and can be seamlessly integrated into any workflow, effectively transforming static checkpoints into a set of "Sliders" for precise control over the output.
 
@@ -17,8 +17,9 @@ This process is fast and can be seamlessly integrated into any workflow, effecti
 
 ## Model Tuner: Application Areas
 
-The following sliders allow you to modify specific blocks of the SDXL U-Net. Each area has been identified and categorized based on my personal experience and extensive research within the AI community.
-These descriptions will be refined over time as more data is gathered.
+Use these sliders to fine-tune specific blocks within the SDXL U-Net.
+Keep in mind that, while each area targets a specific visual aspect, these blocks do not operate in isolation. Because of the interdependent nature of the model, changing one weight will have a dominant effect on its primary area, but it also affects the others.
+These areas are still experimental guidelines that will be refined with time.
 
 ### Input Blocks (Structure and Composition)
 
@@ -60,12 +61,6 @@ The node offers two mathematical approaches to weighting:
 2. **Real Value**: A direct linear multiplier.
 
 **Important Note on Real Value Mode**: This mode is extremely sensitive. You must be very delicate with your adjustments. For example, moving a slider from **1.0 to 0.9** already represents a very heavy change in the model's behavior. Small increments (e.g., 0.01 or 0.02) are recommended for precise tuning.
-
----
-
-## Research and Development
-
-The identification of these application areas is the result of focused research and empirical testing. As AI architectures evolve, these categories and their descriptions will be updated and improved to ensure the highest level of accuracy for creators.
 
 ---
 
